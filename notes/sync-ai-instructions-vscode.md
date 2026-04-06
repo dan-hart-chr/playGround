@@ -32,6 +32,7 @@ my-project/
 **Always on instructions**  
 
 The system always loads these files into the *context window* with every prompt.
+They can be saved for `workspace` or `user`.
 
 - GitHub Copilot acts as your AI assistant in VS Code.
 - You can select any LLM to work with it.
