@@ -14,44 +14,45 @@ Custom instructions produce consistent and relevant AI responses. They ensure **
 
 ## BASIC VS CODE CUSTOM INSTRUCTIONS
 
-`
+```
 my-project/
-+-- AGENTS.md                              ? source of truth (you edit this)
-�
-+-- CLAUDE.md                              ? references the agent (you edit this)
-+-- GEMINI.md                              ? references the agent (you edit this)
-�
-+-- .github/
-    +-- copilot-instructions.md           ? copy of AGENTS.md (you edit this)
-    +-- instructions/
-        +-- general.instructions.md       ? applyTo: ** (you edit this)
-        +-- php.instructions.md           ? applyTo: **/*.php (you edit this)
-        +-- database.instructions.md     ? applyTo: **/*.sql (you edit this)
-`
+├── AGENTS.md                              ← source of truth (you edit this)
+│
+├── CLAUDE.md                              ← references the agent (you edit this)
+├── GEMINI.md                              ← references the agent (you edit this)
+│
+└── .github/
+    ├── copilot-instructions.md           ← copy of AGENTS.md (you edit this)
+    └── instructions/
+        ├── writing.instructions.md       ← applyTo: ** (you edit this)
+        ├── php.instructions.md           ← applyTo: **/*.php (you edit this)
+        └── database.instructions.md     ← applyTo: **/*.sql (you edit this)
+```
+
 **Always on instructions**  
 
 The system always loads these files into the *context window* with every prompt.
 
 - GitHub Copilot acts as your AI assistant in VS Code.
 - You can select any LLM to work with it.
-- GitHub Copilot looks for custom instructions by default inside .github/copilot-instructions.md.
-- The AGENTS.md file provides custom instructions for other AI assistants.
-- Direct copilot-instructions.md to use the AGENTS.md file layout to avoid repetition.
-- This follows the DRY principle (Don't Repeat Yourself).
+- GitHub Copilot looks for custom instructions by default inside `.github/copilot-instructions.md`.
+- The `AGENTS.md` file provides custom instructions for other AI assistants.
+- Direct `copilot-instructions.md` to use the `AGENTS.md `file layout to avoid repetition.
+- This follows the `DRY principle` (Don't Repeat Yourself).
 
 **Scope loaded instructions**
 
 The system only loads scope loaded instructions into the context window when relevant files are active. For example:
 
-- In .github/instructions/writing.instructions.md, the AI assistant only loads instructions when you edit Markdown files.
+- In `.github/instructions/writing.instructions.md`, the AI assistant only loads instructions when you edit Markdown files.
 
 ## Setting Up Claude and Gemini 
 
 You might use multiple AI assistants over time. Claude Code and Gemini CLI are popular alternatives to GitHub Copilot.
 
-- Claude and Gemini read custom instructions from GEMINI.md and CLAUDE.md. The root folder of the project holds both files.
-- Direct these files to read instructions from the AGENTS.md file to follow the DRY principle. You can also add file based instructions inside these individual files to provide full context.
-- The AGENTS.md file contains sufficient project context. It currently lacks the file based instructions located from .github/instructions. The .agents folder might resolve this limitation in the future.
+- Claude and Gemini read custom instructions from `CLAUDE.md` and `GEMINI.md`. The root folder of the project holds both files.
+- Direct these files to read instructions from the `AGENTS.md` file to follow the `DRY principle`. You can also add file based instructions inside these individual files to provide full context.
+- The `AGENTS.md` file contains sufficient project context. It currently lacks the file based instructions located from .github/instructions. The .agents folder might resolve this limitation in the future.
 
 ## A Test Prompt
 
