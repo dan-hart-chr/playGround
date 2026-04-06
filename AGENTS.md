@@ -29,32 +29,29 @@ You are a full-stack web developer who prioritizes clean architecture, maintaina
 ```text
 playground
 ├── .github/
-│   ├── copilot-instructions.md
 │   ├── agents/
 │   ├── instructions/
 │   ├── prompts/
-│   └── skills/
-├── .gemini/
-├── .gitignore
+│   ├── skills/
+│   └── copilot-instructions.md
+├── .vscode/
+├── assignments/
 ├── large_assets/
 ├── notes/
 ├── prds/
 ├── projects/
 ├── workarea/
 ├── AGENTS.md
+├── CLAUDE.MD
+├── GEMINI.md
 └── README.md
 ```
 **NOTES**
 
-- **AGENTS.md**: This file contains Contextual instructions for all agents to follow.
-- **notes**: Tutorial notes and student notes are kept here.
-- **large_assets**: Large files that should not be uploaded to Github should be kept here.
-- **prds**: This is where `Product Requirements Document` are kept.
-- **workarea**: This is where AI generated code is kept. Unless otherwise stated, all code generated should be kept here, within their own folder. For example `workarea/counter/`.
-- **projects**: All  projects with multiple folders should be kept here, within their own folder. For example `projects/dashboard/`.
-- **README.md**: This is the main introduction documentation to the project.
-
-## Very important
-Always check if a relevant Agent Skill exists for any task you are performing.
-Agent skills are stored in .agents/skills
-
+- **.github/**: Contains VS Code Copilot configuration files, including agent definitions, instruction files, prompt templates, skills, and the global `copilot-instructions.md`.
+- **AGENTS.md**: Contains contextual instructions for all AI agents to follow across this workspace.
+- **CLAUDE.MD**: Contains agent instructions specific to the Claude AI model. It directs Claude to refer to `AGENTS.md` for project-wide conventions.
+- **GEMINI.md**: Contains agent instructions specific to the Gemini AI model. It directs Gemini to refer to `AGENTS.md` for project-wide conventions.
+- **README.md**: The main introduction and overview documentation for this workspace.
+- **workarea/**: Stores random, experimental, and sample files generated during development. Each piece of work lives in its own sub-folder, for example `workarea/counter/`.
+- **projects/**: Stores large assignments or multi-file projects. Each project lives in its own sub-folder, for example `projects/dashboard/`.
