@@ -33,27 +33,48 @@ Write in a direct style using only commas, periods, and parentheses for punctuat
 - Active voice is used consistently.
 - All sentences are clear, concise, and free of unnecessary words.
 
+### 🌳 ASCII Tree Structure Standards
+
+When generating or updating project file structures, ALWAYS use the following formatting:
+
+- **Root Folder:** Use the package emoji (📦).
+- **Directories/Folders:** Use the file folder emoji (📁).
+- **Files:** Use the page facing up emoji (📄).
+- **Connectors:** Use Unicode box drawing characters:
+  - `├──` for branches.
+  - `└──` for the last branch in a directory.
+  - `│  ` for vertical alignment of nested items.
+
+Example:
+```text
+📦 project_root
+├── 📁 folder_name
+│   ├── 📄 file_one.py
+│   └── 📄 file_two.py
+└── 📄 README.md
+```
+
 ## File Structure
 
 ```text
-playground
-├── .github/
-│   ├── agents/
-│   ├── instructions/
-│   ├── prompts/
-│   ├── skills/
-│   └── copilot-instructions.md
-├── .vscode/
-├── assignments/
-├── large_assets/
-├── notes/
-├── prds/
-├── projects/
-├── workarea/
-├── AGENTS.md
-├── CLAUDE.MD
-├── GEMINI.md
-└── README.md
+📦 playground
+├── 📁 .github
+│   ├── 📁 agents
+│   ├── 📁 instructions
+│   ├── 📁 prompts
+│   ├── 📁 skills
+│   └── 📄 copilot-instructions.md
+├── 📁 .vscode
+├── 📁 assignments
+├── 📁 large_assets
+├── 📁 notes
+├── 📁 prds
+├── 📁 projects
+├── 📁 workarea
+├── 📄 AGENTS.md
+├── 📄 CLAUDE.MD
+├── 📄 GEMINI.md
+└── 📄 README.md
 ```
 **NOTES**
 
