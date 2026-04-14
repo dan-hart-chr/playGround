@@ -10,9 +10,9 @@ This project serves as a template for setting up VS Code workspace custom instru
 
 ## Important Terminology
 
-**Visual Studio Code** is a source-code editor that Microsoft developed for Windows, Linux, and macOS. It supports debugging, syntax highlighting, and intelligent code completion. Users can customise the editor with extensions to add new languages and tools.
+ **Visual Studio Code❓** is a source-code editor that Microsoft developed for Windows, Linux, and macOS. It supports debugging, syntax highlighting, and intelligent code completion. Users can customise the editor with extensions to add new languages and tools.
 
-**AI assistants** are software systems that use artificial intelligence to help people complete tasks, answer questions, generate content, analyse information, and automate parts of their work.
+**AI assistants❓** are software systems that use artificial intelligence to help people complete tasks, answer questions, generate content, analyse information, and automate parts of their work.
 Examples include:
 
 - ChatGPT
@@ -22,22 +22,22 @@ Examples include:
 - Claude (Anthropic)
 - Gemini
 
-**Large Language Models** (LLMs) are AI systems trained on very large amounts of text so they can understand and generate human-like language. They learn patterns in words, sentences, and context. This allows them to answer questions, summarise information, write content, explain ideas, and assist with tasks such as coding.
+**Large Language Models❓** (LLMs) are AI systems trained on very large amounts of text so they can understand and generate human-like language. They learn patterns in words, sentences, and context. This allows them to answer questions, summarise information, write content, explain ideas, and assist with tasks such as coding.
 Examples include:
 
 - GPT-4o (OpenAI)
 - Gemini (Google)
 - Claude (Anthropic)
 
-**Tokens and Tokenisation** are the foundation of how language models read and process text. Tokenisation is the process of breaking text into smaller units called tokens. For example, the word "tokenisation" may split into three tokens: "token", "isa", and "tion". Models measure their input and output length in tokens, not words.
+**Tokens and Tokenisation❓** are the foundation of how language models read and process text. Tokenisation is the process of breaking text into smaller units called tokens. For example, the word "tokenisation" may split into three tokens: "token", "isa", and "tion". Models measure their input and output length in tokens, not words.
 
-**Context Window** is the maximum amount of text a language model can process in a single interaction. It includes your input, any prior conversation history, and the model's response. When the total number of tokens exceeds this limit, the model can no longer access the earlier content. Larger context windows allow the model to handle longer documents and more complex, multi-step conversations.
+**Context Window❓** is the maximum amount of text a language model can process in a single interaction. It includes your input, any prior conversation history, and the model's response. When the total number of tokens exceeds this limit, the model can no longer access the earlier content. Larger context windows allow the model to handle longer documents and more complex, multi-step conversations.
 
-**Markdown** a lightweight plain text format for writing structured content. It lets you add elements like headings, lists, links, and emphasis with simple symbols. It is te main language that AI understands when creating instructions for it.[markdown Guide](https://www.markdownguide.org/cheat-sheet/)
+**Markdown❓** a lightweight plain text format for writing structured content. It lets you add elements like headings, lists, links, and emphasis with simple symbols. It is te main language that AI understands when creating instructions for it.[markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
-**Prompts** are the specific instructions or questions users give an AI to perform a particular task. They tell the AI *what* to do and are written in natural language.
+**Prompts❓** are the specific instructions or questions users give an AI to perform a particular task. They tell the AI *what* to do and are written in natural language.
 
-**Vibe Coding** was first used by Andrej Karpathy in a [post on X](https://x.com/karpathy/status/1886192184808149383?lang=en) on 2 Feb 2025. It has since evolved to reflect something more substantial. [Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/introduction-vibe-coding/1-introduction) defines Vibe Coding as:
+**Vibe Coding❓** was first used by Andrej Karpathy in a [post on X](https://x.com/karpathy/status/1886192184808149383?lang=en) on 2 Feb 2025. It has since evolved to reflect something more substantial. [Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/introduction-vibe-coding/1-introduction) defines Vibe Coding as:
 > Vibe coding is an innovative approach to software development that leverages AI tools to generate applications.
 
 ---
@@ -61,7 +61,7 @@ Workspace-Name/
         ├── php.instructions.md           ← applyTo: **/*.php (you edit this)
         └── database.instructions.md     ← applyTo: **/*.sql (you edit this)
 ```
-All **Custom Instructions** in  VS Code can be grouped under two headings
+All **Custom Instructions❓** in  VS Code can be grouped under two headings
 
  **Always on instructions**  
 
