@@ -4,9 +4,9 @@
 ![VS Code Logo](notes/vscode.svg)
 
 
-
 ## Objectives
 This project serves as a template for setting up VS Code workspace custom instructions for multiple AI assistants.
+---
 
 ## Important Terminology
 
@@ -39,6 +39,8 @@ Examples include:
 
 **Vibe Coding** was first used by Andrej Karpathy in a [post on X](https://x.com/karpathy/status/1886192184808149383?lang=en) on 2 Feb 2025. It has since evolved to reflect something more substantial. [Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/introduction-vibe-coding/1-introduction) defines Vibe Coding as:
 > Vibe coding is an innovative approach to software development that leverages AI tools to generate applications.
+
+---
 
 ## BASIC VS CODE CUSTOM INSTRUCTIONS
 
@@ -77,7 +79,7 @@ The system only loads scope loaded instructions into the context window when rel
 
 - In `.github/instructions/writing.instructions.md`, the AI assistant only loads instructions when you edit Markdown files.
 
-
+---
 
 ## References
 
@@ -105,4 +107,4 @@ The system only loads scope loaded instructions into the context window when rel
 
 - [Gemini CLI - GEMINI.md](https://geminicli.com/docs/cli/gemini-md/)
 
- 
+ ---
