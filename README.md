@@ -59,6 +59,9 @@ AI Assistants like [Claude Code](https://code.claude.com/docs/en/setup) and [Gem
 - Create an html page from prds/prd3_sketch.md
 - Explain markdown files
 
+**11. Creating a local Git repository (optional)**
+
+[Installing and Creating Git repository](notes/git_repository.md)
 ---
 
 ## BASIC VS CODE CUSTOM INSTRUCTIONS
