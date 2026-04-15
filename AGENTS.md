@@ -16,72 +16,38 @@ You are a full-stack web developer who prioritizes clean architecture, maintaina
 - Version control: Git 2.23+
 
 ## Coding Conventions
-- PHP: Use strict typing `declare(strict_types=1);`, follow PSR-12 formatting
-- Python: Follow PEP 8, use type hints, prefer f-strings
+- PHP: Follow PSR-12 formatting (see `php.instructions.md` for full conventions)
+- Python: Follow PEP 8, use type hints, prefer f-strings, Always use venv Python Virtual Environment. Python 3.11+
 - JavaScript: Use modern ES6+ syntax, avoid jQuery unless legacy requirement
 - HTML: Use semantic elements, ensure WCAG 2.1 AA accessibility
 - CSS: Mobile-first responsive design, prefer Grid/Flexbox over floats
-- Use prepared statements for all database queries (PDO)
-- - Do not embed inline CSS or JavaScript in HTML files. Use external stylesheets (`<link>`) and script files (`<script src>`).
-
-## Writing Style
-Write in a direct style using only commas, periods, and parentheses for punctuation. Avoid using em dashes entirely.
-
-- No contracted forms are present.
-- No hyphens are used to join separate sentences.
-- British English spellings are used throughout.
-- Active voice is used consistently.
-- All sentences are clear, concise, and free of unnecessary words.
-
-### 🌳 ASCII Tree Structure Standards
-
-When generating or updating project file structures, ALWAYS use the following formatting:
-
-- **Root Folder:** Use the package emoji (📦).
-- **Directories/Folders:** Use the file folder emoji (📁).
-- **Files:** Use the page facing up emoji (📄).
-- **Connectors:** Use Unicode box drawing characters:
-  - `├──` for branches.
-  - `└──` for the last branch in a directory.
-  - `│  ` for vertical alignment of nested items.
-
-Example:
-```text
-📦 project_root
-├── 📁 folder_name
-│   ├── 📄 file_one.py
-│   └── 📄 file_two.py
-└── 📄 README.md
-```
 
 ## File Structure
 
 ```text
-📦 playground
-├── 📁 .github
-│   ├── 📁 agents
-│   ├── 📁 instructions
-│   ├── 📁 prompts
-│   ├── 📁 skills
-│   └── 📄 copilot-instructions.md
-├── 📁 .vscode
-├── 📁 assignments
-├── 📁 large_assets
-├── 📁 notes
-├── 📁 prds
-├── 📁 projects
-├── 📁 workarea
-├── 📄 AGENTS.md
-├── 📄 CLAUDE.MD
-├── 📄 GEMINI.md
-└── 📄 README.md
+playground
+├── .github/
+│   ├── copilot-instructions.md
+│   ├── agents/
+│   ├── instructions/
+│   ├── prompts/
+│   └── skills/
+├── .gemini/
+├── .gitignore
+├── large_assets/
+├── notes/
+├── prds/
+├── projects/
+├── workarea/
+├── AGENTS.md
+└── README.md
 ```
 **NOTES**
 
-- **.github/**: Contains VS Code Copilot configuration files, including agent definitions, instruction files, prompt templates, skills, and the global `copilot-instructions.md`.
-- **AGENTS.md**: Contains contextual instructions for all AI agents to follow across this workspace.
-- **CLAUDE.MD**: Contains agent instructions specific to the Claude AI model. It directs Claude to refer to `AGENTS.md` for project-wide conventions.
-- **GEMINI.md**: Contains agent instructions specific to the Gemini AI model. It directs Gemini to refer to `AGENTS.md` for project-wide conventions.
-- **README.md**: The main introduction and overview documentation for this workspace.
-- **workarea/**: Stores random, experimental, and sample files generated during development. Each piece of work lives in its own sub-folder, for example `workarea/counter/`.
-- **projects/**: Stores large assignments or multi-file projects. Each project lives in its own sub-folder, for example `projects/dashboard/`.
+- **AGENTS.md**: This file contains Contextual instructions for all agents to follow.
+- **notes**: Tutorial notes and student notes are kept here.
+- **large_assets**: Large files that should not be uploaded to Github should be kept here.
+- **prds**: This is where `Product Requirements Document` are kept.
+- **workarea**: This is where AI generated code is kept. Unless otherwise stated, all code generated should be kept here, within their own folder. For example `workarea/counter/`.
+- **projects**: All large projects with multiple folders should be kept here, within their own folder. For example `projects/dashboard/`.
+- **README.md**: This is the main introduction documentation to the project.
