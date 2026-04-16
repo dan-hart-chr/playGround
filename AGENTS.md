@@ -48,6 +48,6 @@ playground
 - **notes**: Tutorial notes and student notes are kept here.
 - **large_assets**: Large files that should not be uploaded to Github should be kept here.
 - **prds**: This is where `Product Requirements Document` are kept.
-- **workarea**: This is where AI generated code is kept. Unless otherwise stated, all code generated should be kept here, within their own folder. For example `workarea/counter/`.
-- **projects**: All large projects with multiple folders should be kept here, within their own folder. For example `projects/dashboard/`.
+- **projects**: This is where AI generated code is kept. Unless otherwise stated, all code generated should be kept here, within their own folder. For example `projects/counter/`.
+- **workarea**: All single generated files should be kept here.
 - **README.md**: This is the main introduction documentation to the project.
