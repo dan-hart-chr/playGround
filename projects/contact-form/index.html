@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="form.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-header__title">Contact Us</h1>
+  </header>
+
+  <main class="site-main">
+    <section class="card" aria-labelledby="form-heading">
+      <h2 class="card__heading" id="form-heading">Send us a message</h2>
+
+      <form class="contact-form" id="contact-form" novalidate>
+
+        <div class="form-field">
+          <label class="form-field__label form-field__label--required" for="first-name">
+            First name
+          </label>
+          <input
+            class="form-field__input"
+            type="text"
+            id="first-name"
+            name="firstName"
+            autocomplete="given-name"
+            required
+            aria-required="true"
+            aria-describedby="first-name-hint"
+          >
+          <span class="form-field__hint" id="first-name-hint">Enter your first name.</span>
+        </div>
+
+        <div class="form-field">
+          <label class="form-field__label form-field__label--required" for="email">
+            Email address
+          </label>
+          <input
+            class="form-field__input"
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+            aria-required="true"
+            aria-describedby="email-hint"
+          >
+          <span class="form-field__hint" id="email-hint">We will never share your email with anyone.</span>
+        </div>
+
+        <div class="form-field">
+          <label class="form-field__label form-field__label--required" for="comments">
+            Comments
+          </label>
+          <textarea
+            class="form-field__textarea"
+            id="comments"
+            name="comments"
+            required
+            aria-required="true"
+            aria-describedby="comments-hint"
+          ></textarea>
+          <span class="form-field__hint" id="comments-hint">Tell us what is on your mind.</span>
+        </div>
+
+        <button class="btn btn--primary" type="submit">Submit</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Contact Form Demo</p>
+  </footer>
+</body>
+</html>
