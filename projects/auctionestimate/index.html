@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auction Estimate Tool — Christie's</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- Utility bar -->
+  <div class="utility-bar">
+    <div class="utility-bar__inner">
+      <nav class="utility-bar__actions" aria-label="Account navigation">
+        <a href="#" class="utility-bar__action">
+          <svg class="utility-bar__icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="8" r="4" stroke="#222" stroke-width="1.25"/>
+            <path d="M4 20c0-4 3.582-7 8-7s8 3 8 7" stroke="#222" stroke-width="1.25" stroke-linecap="round"/>
+          </svg>
+          <span>Sign in</span>
+        </a>
+        <span class="utility-bar__divider" aria-hidden="true"></span>
+        <button class="utility-bar__action utility-bar__lang" type="button" aria-label="Change language">
+          <span>EN</span>
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8" cy="8" r="6" stroke="#222" stroke-width="1.25"/>
+            <path d="M8 2c-2 2.5-2 9.5 0 12M8 2c2 2.5 2 9.5 0 12M2 8h12" stroke="#222" stroke-width="1.25"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main navigation -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="#" class="site-header__logo" aria-label="Christie's homepage">
+        <img
+          src="http://localhost:3845/assets/dd22fa0c5a5581d093b364e23dff68129d92f649.svg"
+          alt="Christie's"
+          width="137"
+          height="18"
+        >
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="site-nav__list" role="list">
+          <li><a href="#" class="site-nav__link">Auctions</a></li>
+          <li><a href="#" class="site-nav__link">Private Sales</a></li>
+          <li><a href="#" class="site-nav__link">Sell</a></li>
+          <li><a href="#" class="site-nav__link">Departments</a></li>
+          <li><a href="#" class="site-nav__link">Discover</a></li>
+          <li><a href="#" class="site-nav__link">Shop</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__search">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="10.5" cy="10.5" r="6.5" stroke="#222" stroke-width="1.25"/>
+          <path d="M15.5 15.5L20 20" stroke="#222" stroke-width="1.25" stroke-linecap="round"/>
+        </svg>
+        <span class="site-header__search-label">Search by keyword</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <img
+          class="hero__bg-img hero__bg-img--far"
+          src="http://localhost:3845/assets/5ac160c125842ea6bfd179bd66d8db7f0952769e.png"
+          alt=""
+        >
+        <img
+          class="hero__bg-img hero__bg-img--near"
+          src="http://localhost:3845/assets/f2fe465d9ad1b6a6b3b8096252ee7bacd176cb2f.png"
+          alt=""
+        >
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <h1 id="hero-title" class="hero__title">Request an estimate</h1>
+        <p class="hero__subtitle">Get a complimentary valuation from Christie's specialists</p>
+        <div class="hero__actions">
+          <a href="#" class="btn btn--primary btn--dark">Sign in</a>
+          <a href="#" class="btn btn--secondary btn--dark">Create an account</a>
+        </div>
+        <p class="hero__note">
+          Submitting more than 6 items?
+          <a href="#" class="hero__note-link">Contact our Valuations team</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how-it-works" aria-labelledby="how-title">
+      <div class="section-inner">
+        <div class="how-it-works__header">
+          <h2 id="how-title" class="heading-xl">How it works</h2>
+          <p class="body-text">Submit your item in just a few minutes — with no obligation to sell.</p>
+        </div>
+        <div class="how-it-works__steps">
+
+          <article class="step-card">
+            <div class="step-card__icon" aria-hidden="true">
+              <img
+                src="http://localhost:3845/assets/c1b7a3bf708ab1682c03c2afc850e9e4b0872fc3.svg"
+                alt=""
+                width="116"
+                height="116"
+              >
+            </div>
+            <div class="step-card__body">
+              <p class="step-card__label">Step 1</p>
+              <h3 class="step-card__title">Tell us about your item</h3>
+              <p class="step-card__description">Include key details, its purchase history and at least 3 photographs.</p>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card__icon" aria-hidden="true">
+              <img
+                src="http://localhost:3845/assets/f51dcce4a7a1bcf204eb9fe2383b8b18f40e3dde.svg"
+                alt=""
+                width="116"
+                height="116"
+              >
+            </div>
+            <div class="step-card__body">
+              <p class="step-card__label">Step 2</p>
+              <h3 class="step-card__title">Expert review</h3>
+              <p class="step-card__description">Our specialists will assess your item and research comparable works.</p>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card__icon" aria-hidden="true">
+              <img
+                src="http://localhost:3845/assets/dfc333d4683c85774361895bb0048dbee0bac783.svg"
+                alt=""
+                width="116"
+                height="116"
+              >
+            </div>
+            <div class="step-card__body">
+              <p class="step-card__label">Step 3</p>
+              <h3 class="step-card__title">Receive your estimate</h3>
+              <p class="step-card__description">If suitable for a Christie's sale, we'll send you an estimate within 3–4 weeks.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Christie's banner -->
+    <section class="why-christies" aria-labelledby="why-title">
+      <div class="why-christies__content">
+        <div class="why-christies__text">
+          <h2 id="why-title" class="heading-xl">Why Christie's?</h2>
+          <p class="body-text">
+            Selling with Christie's is simple and seamless. For more than 250 years, our specialists have connected exceptional works with collectors around the world, combining deep market insight with global reach to achieve outstanding results.
+          </p>
+          <a href="#" class="btn btn--secondary btn--light">Browse recent results</a>
+        </div>
+        <div class="why-christies__image" aria-hidden="true">
+          <img
+            src="http://localhost:3845/assets/7f12ea1300756f144a0fb5daaf68dbfc01103a46.png"
+            alt="Christie's auction room"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- What we sell -->
+    <section class="what-we-sell" aria-labelledby="sell-title">
+      <div class="section-inner">
+        <header class="what-we-sell__header">
+          <h2 id="sell-title" class="heading-xl">What we sell</h2>
+          <a href="#" class="what-we-sell__link">
+            <svg aria-hidden="true" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 16h20M18 8l8 8-8 8" stroke="#222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            View all departments
+          </a>
+        </header>
+
+        <ul class="category-grid" role="list">
+          <li>
+            <a href="#" class="category-card">
+              <div class="category-card__image">
+                <img src="http://localhost:3845/assets/a1a3014163d26020d351f7098df37e30c6d803c8.png" alt="" loading="lazy">
+              </div>
+              <p class="category-card__name">Post-War and Contemporary Art</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category-card">
+              <div class="category-card__image">
+                <img src="http://localhost:3845/assets/af394476ccf7a64f07ef6ff6807556188c8ce104.png" alt="" loading="lazy">
+              </div>
+              <p class="category-card__name">Impressionist and Modern Art</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category-card">
+              <div class="category-card__image">
+                <img src="http://localhost:3845/assets/4bf9d03689fa1760c5851ef9044115b7b7e72248.png" alt="" loading="lazy">
+              </div>
+              <p class="category-card__name">Old Master Paintings</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category-card">
+              <div class="category-card__image">
+                <img src="http://localhost:3845/assets/6eed9652d1ed0305df37879543bf1e0df1784ea4.png" alt="" loading="lazy">
+              </div>
+              <p class="category-card__name">Prints and Multiples</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category-card">
+              <div class="category-card__image">
+                <img src="http://localhost:3845/assets/c59aa2ed9aecccaede8ffe2f6c4aaced5bd62195.png" alt="" loading="lazy">
+              </div>
+              <p class="category-card__name">Jewellery</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category-card">
+              <div class="category-card__image">
+                <img src="http://localhost:3845/assets/ccdab1dcde00aab74cc77256809261ebb9f36b44.png" alt="" loading="lazy">
+              </div>
+              <p class="category-card__name">Watches and Wristwatches</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category-card">
+              <div class="category-card__image">
+                <img src="http://localhost:3845/assets/c9f55097b7f274c3d1bed642cc87bd774f06d8ba.png" alt="" loading="lazy">
+              </div>
+              <p class="category-card__name">Handbags and Accessories</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category-card">
+              <div class="category-card__image">
+                <img src="http://localhost:3845/assets/ce164b91f2dfa712ffb8a415d6d1fe5da3b12465.png" alt="" loading="lazy">
+              </div>
+              <p class="category-card__name">Design</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category-card">
+              <div class="category-card__image">
+                <img src="http://localhost:3845/assets/febfb5339a742ba0105dee08dc5aa6c0899376fe.png" alt="" loading="lazy">
+              </div>
+              <p class="category-card__name">Ancient Art and Antiquities</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category-card">
+              <div class="category-card__image">
+                <img src="http://localhost:3845/assets/b2bdc8796c5ed772d39eb11b0d9234a2e4d29bb9.png" alt="" loading="lazy">
+              </div>
+              <p class="category-card__name">19th Century European Art</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category-card">
+              <div class="category-card__image">
+                <img src="http://localhost:3845/assets/c4a6d822f1ae05d1f997d751584978e0d97b2595.png" alt="" loading="lazy">
+              </div>
+              <p class="category-card__name">Photographs</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category-card">
+              <div class="category-card__image">
+                <img src="http://localhost:3845/assets/28df3d8e5cd6be61d2490ad0a66eb67edfa316f2.png" alt="" loading="lazy">
+              </div>
+              <p class="category-card__name">Wine and Spirits</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA banner -->
+    <section class="cta-banner" aria-labelledby="cta-title">
+      <div class="cta-banner__content">
+        <h2 id="cta-title" class="heading-xl">Start your estimate request</h2>
+        <p class="body-text">Submit your item for a complimentary estimate in just a few minutes</p>
+        <div class="cta-banner__actions">
+          <a href="#" class="btn btn--primary btn--dark">Sign in</a>
+          <a href="#" class="btn btn--secondary btn--dark">Create an account</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+    <section class="faq" aria-labelledby="faq-title">
+      <div class="section-inner">
+        <header class="faq__header">
+          <h2 id="faq-title" class="heading-xl">Frequently asked questions</h2>
+          <p class="body-text">
+            Can't find the answer here?
+            <a href="#" class="text-link">Contact support</a>
+          </p>
+        </header>
+
+        <div class="faq__group">
+          <p class="faq__group-title">Getting started</p>
+          <ul class="accordion" role="list">
+            <li class="accordion__item">
+              <button
+                class="accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq-1-panel"
+                id="faq-1-btn"
+              >
+                <span>What categories does Christie's sell?</span>
+                <svg class="accordion__icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 5v14M5 12h14" stroke="#222" stroke-width="1.25" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div
+                class="accordion__panel"
+                id="faq-1-panel"
+                role="region"
+                aria-labelledby="faq-1-btn"
+                hidden
+              >
+                <p>Christie's sells across 80 specialist departments covering areas including fine art, decorative arts, jewellery, watches, wine, photographs, prints, and more.</p>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <button
+                class="accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq-2-panel"
+                id="faq-2-btn"
+              >
+                <span>How do I sell an item with Christie's?</span>
+                <svg class="accordion__icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 5v14M5 12h14" stroke="#222" stroke-width="1.25" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div
+                class="accordion__panel"
+                id="faq-2-panel"
+                role="region"
+                aria-labelledby="faq-2-btn"
+                hidden
+              >
+                <p>Begin by submitting your item through our online estimate request form. Our specialists will review your item and contact you to discuss the best route to sale.</p>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <button
+                class="accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq-3-panel"
+                id="faq-3-btn"
+              >
+                <span>May I submit my own artwork for evaluation?</span>
+                <svg class="accordion__icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 5v14M5 12h14" stroke="#222" stroke-width="1.25" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div
+                class="accordion__panel"
+                id="faq-3-panel"
+                role="region"
+                aria-labelledby="faq-3-btn"
+                hidden
+              >
+                <p>Yes. Christie's accepts submissions from individual sellers. Please use the estimate request form to submit your item for specialist review.</p>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <button
+                class="accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq-4-panel"
+                id="faq-4-btn"
+              >
+                <span>What kind of information is needed to submit an auction estimate request?</span>
+                <svg class="accordion__icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 5v14M5 12h14" stroke="#222" stroke-width="1.25" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div
+                class="accordion__panel"
+                id="faq-4-panel"
+                role="region"
+                aria-labelledby="faq-4-btn"
+                hidden
+              >
+                <p>We ask for key details about your item including title, artist or maker, medium, dimensions, date of creation, provenance, and at least three photographs showing all angles and any marks or signatures.</p>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <button
+                class="accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq-5-panel"
+                id="faq-5-btn"
+              >
+                <span>What are the terms and conditions to submit items for an online auction estimate?</span>
+                <svg class="accordion__icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 5v14M5 12h14" stroke="#222" stroke-width="1.25" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div
+                class="accordion__panel"
+                id="faq-5-panel"
+                role="region"
+                aria-labelledby="faq-5-btn"
+                hidden
+              >
+                <p>Submitting an estimate request is free and carries no obligation to sell. Full terms and conditions are available on the Christie's website.</p>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <button
+                class="accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq-6-panel"
+                id="faq-6-btn"
+              >
+                <span>How many items can I submit through the Christie's auction estimate request service?</span>
+                <svg class="accordion__icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 5v14M5 12h14" stroke="#222" stroke-width="1.25" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div
+                class="accordion__panel"
+                id="faq-6-panel"
+                role="region"
+                aria-labelledby="faq-6-btn"
+                hidden
+              >
+                <p>You may submit up to 6 items per request through the online form. For larger collections, please contact our Valuations team directly.</p>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <button
+                class="accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq-7-panel"
+                id="faq-7-btn"
+              >
+                <span>May I submit an auction estimate request for an item that I do not own?</span>
+                <svg class="accordion__icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 5v14M5 12h14" stroke="#222" stroke-width="1.25" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div
+                class="accordion__panel"
+                id="faq-7-panel"
+                role="region"
+                aria-labelledby="faq-7-btn"
+                hidden
+              >
+                <p>Submissions should be made by the owner or their authorised representative. Please indicate your relationship to the item when completing the estimate request form.</p>
+              </div>
+            </li>
+          </ul>
+          <div class="faq__load-more">
+            <button type="button" class="btn btn--secondary btn--light">Load more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__columns">
+      <div class="site-footer__column">
+        <p class="site-footer__col-title">Help</p>
+        <ul class="site-footer__links" role="list">
+          <li><a href="#" class="site-footer__link">FAQs</a></li>
+          <li><a href="#" class="site-footer__link">How to buy</a></li>
+          <li><a href="#" class="site-footer__link">How to sell</a></li>
+          <li><a href="#" class="site-footer__link">Get an estimate</a></li>
+          <li><a href="#" class="site-footer__link">Selling guides</a></li>
+          <li><a href="#" class="site-footer__link">Payment and shipping</a></li>
+          <li><a href="#" class="site-footer__link">Auction help library</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__column">
+        <p class="site-footer__col-title">About us</p>
+        <ul class="site-footer__links" role="list">
+          <li><a href="#" class="site-footer__link">About Christie's</a></li>
+          <li><a href="#" class="site-footer__link">Careers</a></li>
+          <li><a href="#" class="site-footer__link">Locations</a></li>
+          <li><a href="#" class="site-footer__link">Press</a></li>
+          <li><a href="#" class="site-footer__link">Responsible Culture</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__column">
+        <p class="site-footer__col-title">Services</p>
+        <ul class="site-footer__links" role="list">
+          <li><a href="#" class="site-footer__link">Art Finance</a></li>
+          <li><a href="#" class="site-footer__link">Private Sales</a></li>
+          <li><a href="#" class="site-footer__link">Client Advisory</a></li>
+          <li><a href="#" class="site-footer__link">Gooding Christie's</a></li>
+          <li><a href="#" class="site-footer__link">Museum and Corporate Collections</a></li>
+          <li><a href="#" class="site-footer__link">Restitution</a></li>
+          <li><a href="#" class="site-footer__link">Christie's Ventures</a></li>
+          <li><a href="#" class="site-footer__link">Valuations, Appraisals and Professional Advisor Services</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__column">
+        <p class="site-footer__col-title">More info</p>
+        <ul class="site-footer__links" role="list">
+          <li><a href="#" class="site-footer__link">Terms and conditions</a></li>
+          <li><a href="#" class="site-footer__link">Privacy</a></li>
+          <li><a href="#" class="site-footer__link">Security</a></li>
+          <li><a href="#" class="site-footer__link">Cookie settings</a></li>
+          <li><a href="#" class="site-footer__link">Do not sell my personal information</a></li>
+          <li><a href="#" class="site-footer__link">Modern slavery statement</a></li>
+          <li><a href="#" class="site-footer__link">Christie's Education</a></li>
+          <li><a href="#" class="site-footer__link">Christie's Real Estate</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p class="site-footer__copyright">&copy; Christie's 2026</p>
+      <nav class="site-footer__social" aria-label="Social media">
+        <!-- Facebook -->
+        <a href="#" class="site-footer__social-link" aria-label="Facebook">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 3H8.5C7.672 3 7 3.672 7 4.5V6H5v2.5h2V13h2.5V8.5H11l.5-2.5H9.5V4.5a.5.5 0 01.5-.5H10V3z" fill="#F0E8D7"/>
+          </svg>
+        </a>
+        <!-- X (Twitter) -->
+        <a href="#" class="site-footer__social-link" aria-label="X (Twitter)">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2l5 5.5L2 13h1.5l3.5-4 3.5 4H13L8 7.5 13 2h-1.5L8 5.5 4.5 2H2z" fill="#F0E8D7"/>
+          </svg>
+        </a>
+        <!-- Instagram -->
+        <a href="#" class="site-footer__social-link" aria-label="Instagram">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="12" height="12" rx="3" stroke="#F0E8D7" stroke-width="1.25"/>
+            <circle cx="8" cy="8" r="3" stroke="#F0E8D7" stroke-width="1.25"/>
+            <circle cx="11.5" cy="4.5" r="0.75" fill="#F0E8D7"/>
+          </svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="#" class="site-footer__social-link" aria-label="LinkedIn">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 5.5h2V13H3V5.5zm1-1.5a1 1 0 100-2 1 1 0 000 2zm3 1.5h2v1a2.5 2.5 0 012.5-1c2 0 2.5 1.5 2.5 3V13h-2V9.5c0-1-.5-1.5-1.25-1.5-.75 0-1.25.5-1.25 1.5V13H7V5.5z" fill="#F0E8D7"/>
+          </svg>
+        </a>
+        <!-- YouTube -->
+        <a href="#" class="site-footer__social-link" aria-label="YouTube">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="3.5" width="14" height="9" rx="2" stroke="#F0E8D7" stroke-width="1.25"/>
+            <path d="M6.5 6l4 2-4 2V6z" fill="#F0E8D7"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raptor Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="page-header">
+            <h1>HEADER</h1>
+        </header>
+
+        <nav class="page-nav" aria-label="Primary navigation">
+            <p>NAVBAR</p>
+        </nav>
+
+        <main class="page-main" aria-label="Main content">
+            <span class="sr-only">MAIN SECTION</span>
+            <div class="main-grid">
+                <article class="grid-card">
+                    <img class="grid-card__image" src="https://placehold.co/600x400/93c5fd/1e3a8a?text=COLUMN+1" alt="Column 1 placeholder image">
+                    <h2 class="sr-only">COLUMN 1</h2>
+                </article>
+                <article class="grid-card">
+                    <img class="grid-card__image" src="https://placehold.co/600x400/fda4af/7f1d1d?text=COLUMN+2" alt="Column 2 placeholder image">
+                    <h2 class="sr-only">COLUMN 2</h2>
+                </article>
+                <article class="grid-card">
+                    <img class="grid-card__image" src="https://placehold.co/600x400/fbf08a/4b4f31?text=COLUMN+3" alt="Column 3 placeholder image">
+                    <h2 class="sr-only">COLUMN 3</h2>
+                </article>
+                <article class="grid-card">
+                    <h2>COLUMN 4</h2>
+                </article>
+                <article class="grid-card">
+                    <h2>COLUMN 5</h2>
+                </article>
+                <article class="grid-card">
+                    <h2>COLUMN 6</h2>
+                </article>
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <div class="footer-column">
+                <h2>COL 1</h2>
+            </div>
+            <div class="footer-column">
+                <h2>COL 2</h2>
+            </div>
+            <div class="footer-column">
+                <h2>COL 3</h2>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
