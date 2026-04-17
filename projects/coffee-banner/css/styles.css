@@ -1,0 +1,65 @@
+/* Design Tokens */
+:root {
+    --bg-color: #c6c0af;
+    --text-color: #000000;
+    --font-family: 'Verdana', sans-serif;
+    --primary-font-size: 1.3rem;
+    --footer-font-size: 1.2rem;
+    --spacing-50: 50px;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    color: var(--text-color);
+}
+
+/* Banner Styles */
+.banner-container {
+    width: 300px;
+    height: 600px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 230px;
+    height: 250px;
+    margin-top: var(--spacing-50);
+    object-fit: cover;
+}
+
+.primary-text {
+    font-family: var(--font-family);
+    font-size: var(--primary-font-size);
+    font-weight: normal;
+    margin-top: var(--spacing-50);
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: var(--spacing-50);
+    width: 100%;
+    text-align: center;
+}
+
+.footer-text {
+    font-family: var(--font-family);
+    font-size: var(--footer-font-size);
+    font-weight: bold;
+}

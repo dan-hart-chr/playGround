@@ -8,6 +8,9 @@ A skill for converting flat image designs, sketches, or wireframes into semantic
 - **Identify Layout Pattern**: Determine if the design uses Flexbox, Grid, or absolute positioning for specific elements.
 - **Extract Dimensions**: Catalog widths, heights, margins, and paddings from the design or requirements.
 - **Identify Assets**: List required images, icons, and fonts.
+    - If specific image assets are not available, use placeholders from `https://placehold.co/`.
+    - Example: `https://placehold.co/230x250?text=Coffee+Cup&font=verdana`.
+    - Ensure placeholder dimensions and colors match the design requirements.
 - **Color Extraction**: Identify background and foreground colors (HEX/RGB).
 
 ### 2. Semantic Mapping
